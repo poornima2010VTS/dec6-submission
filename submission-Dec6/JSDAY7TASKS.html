@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script> 
+
+       // TASK1
+
+       document.write(" TASK1 : "); 
+       let word = "javascript";
+       let upper = word.toUpperCase();
+
+       document.write(upper + "<br>" );  // Output on webpage: JAVASCRIPT
+
+       // TASK 2
+
+       document.write(" TASK2 : "); 
+       let word1 = "LOWERCASE";
+       let lower = word1.toLowerCase();
+
+       document.write(lower);  // Output on webpage: JAVASCRIPT
+
+       // TASK 3
+
+
+       document.write(" TASK3 : "); 
+       let word2 = "JavaScript";
+       let part = word2.slice(4);   // Extract from index 4 to end
+
+       document.write(part + "<br>");  // Output: Script
+
+       // TASK 4 
+
+       document.write(" TASK4 : "); 
+       let text = "This is a bad day";
+       let newText = text.replace("bad", "good");
+
+       document.write(newText + "<br>");  // Output: This is a good day
+
+       // TASK 5. Check if "Coding" is present in "I love Coding!"
+
+        let text1 = "I love Coding!";
+        let result1 = text1.includes("Coding");
+        document.write("TASK 5 Contains 'Coding'? → " + result1 + "<br><br>");
+        
+       // TASK 6. Find the position of "world" in "Hello world!"
+
+         document.write(" TASK6 : "); 
+         let text2 = "Hello world!";
+         let result2 = text2.indexOf("world");
+         document.write(" Position of 'world': → " + result2 + "<br><br>");
+
+
+      // TASK 7 
+
+         document.write(" TASK7 : "); 
+         let text3 = "  Trim me  ";
+         let result3 = text3.trim();
+         document.write("7. After trim: → '" + result3 + "'<br><br>");
+
+     // TASK 8 
+
+      document.write(" TASK8 : "); 
+      let text4 = "Programming";
+      let result4 = text4.length;
+      document.write("8. Character count: → " + result4 + "<br><br>");
+
+     
+       // TASK 9 ---Check if "apple" starts with "a"
+
+        document.write(" TASK9 : "); 
+       let text5 = "apple";
+       let result5 = text5.startsWith("a");
+       document.write("Starts with 'a'? → " + result5 + "<br><br>");
+       
+
+       // TASK 10 --- Split "banana,apple,orange" into an array
+
+        document.write(" TASK10 : "); 
+        let text6 = "banana,apple,orange";
+        let result6 = text6.split(",");
+        document.write(" Array after split: → " + result6 + "<br><br>")
+    
+
+    // 11. Repeat "JS " three times
+let repeated = "JS ".repeat(3);
+document.write("11. Repeated → " + repeated + "<br><br>");
+
+
+// 12. Concatenate "Web" and " Development"
+let result12 = "Web".concat(" Development");
+document.write("12. Concatenated → " + result12 + "<br><br>");
+
+
+// 13. Validate if "user123" has at least 5 characters
+let username = "user123";
+let isValid = username.length >= 5;
+document.write("13. Username valid? → " + isValid + "<br><br>");
+
+
+// 14. Check if a string starts with a specific substring using startsWith()
+let str14 = "JavaScript coding";
+document.write("14. Starts with 'Java'? → " + str14.startsWith("Java") + "<br><br>");
+
+
+// 15. Check if a string ends with a specific substring using endsWith()
+let str15 = "Hello World!";
+document.write("15. Ends with 'World!'? → " + str15.endsWith("World!") + "<br><br>");
+
+
+// 16. Use includes() to check for a word in a sentence
+let str16 = "I am learning JavaScript";
+document.write("16. Contains 'learning'? → " + str16.includes("learning") + "<br><br>");
+
+
+// 17. Convert a full name to initials ("John Doe" → "J.D.")
+let fullName = "John Doe";
+let parts = fullName.split(" ");
+let initials = parts[0][0] + "." + parts[1][0] + ".";
+document.write("17. Initials → " + initials + "<br><br>");
+
+
+// 18. Count how many times a letter appears in a string
+let text18 = "programming";
+let count = 0;
+for (let i = 0; i < text18.length; i++) {
+    if (text18[i] === 'g') {
+        count++;
+    }
+}
+document.write("18. 'g' count → " + count + "<br><br>");
+
+
+// 19. Find the longest word in a sentence
+let sentence = "JavaScript is a powerful language";
+let words = sentence.split(" ");
+let longest = "";
+for (let w of words) {
+    if (w.length > longest.length) {
+        longest = w;
+    }
+}
+document.write("19. Longest word → " + longest + "<br><br>");
+
+
+// 20. Capitalize the first letter of each word
+let sentence20 = "welcome to javascript programming";
+let words20 = sentence20.split(" ");
+for (let i = 0; i < words20.length; i++) {
+    words20[i] = words20[i][0].toUpperCase() + words20[i].slice(1);
+}
+let capitalized = words20.join(" ");
+document.write("20. Capitalized sentence → " + capitalized + "<br><br>");
+
+</script>
+
+</body>
+</html>

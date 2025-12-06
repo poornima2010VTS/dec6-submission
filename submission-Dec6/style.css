@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #b80f0f;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.menu li {
+    margin: 0 12px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    padding: 50px;
+    background: #f1f1f1;
+    align-items: center;
+}
+
+.hero-img {
+    width: 45%;
+}
+
+.hero-text {
+    margin-left: 40px;
+}
+
+.hero-text h1 {
+    font-size: 32px;
+}
+
+.red-btn {
+    background: #b80f0f;
+    border: none;
+    padding: 12px 18px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* SERVICES */
+.section-title {
+    text-align: center;
+    margin: 40px 0 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.service-box {
+    background: white;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #ccc;
+}
+
+.service-box img {
+    width: 60px;
+    height: 60px;
+}
+
+.info-text {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* BLOOD INFO */
+.blood-info {
+    display: flex;
+    margin: 40px;
+}
+
+.blood-left {
+    width: 50%;
+    background: #b80f0f;
+    padding: 30px;
+    color: white;
+    border-radius: 8px 0 0 8px;
+}
+
+.learn-link {
+    color: #ffeaea;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.blood-right img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+    object-fit: cover;
+}
+
+/* ORGAN BOXES */
+.organ-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.organ-box {
+    width: 260px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+}
+
+/* FOOTER */
+.footer {
+    background: #b80f0f;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    line-height: 22px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background: #a00;
+    color: white;
+}
