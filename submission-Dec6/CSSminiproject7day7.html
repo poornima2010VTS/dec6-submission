@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox Forms</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: #eef0f2;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+form {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0066cc;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="text-align:center;">Login & Signup</h1>
+
+<div class="container">
+
+  <form>
+    <h2>Login</h2>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+  </form>
+
+  <form>
+    <h2>Signup</h2>
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Sign Up</button>
+  </form>
+
+</div>
+
+</body>
+</html>

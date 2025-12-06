@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Newsletter Subscription Banner</title>
+
+<style>
+    /* FULL-WIDTH BANNER */
+    .newsletter-banner {
+        width: 100vw;                 /* full-width using vw */
+        background: #4a6cf7;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    /* HEADING */
+    .newsletter-banner h2 {
+        font-size: 4vmin;             /* vmin for scalable heading */
+        margin-bottom: 10px;
+    }
+
+    /* SUBTEXT */
+    .newsletter-banner p {
+        font-size: 1.1rem;            /* rem for paragraph */
+        margin-bottom: 20px;
+    }
+
+    /* INPUT FIELD */
+    .newsletter-banner input[type="email"] {
+        width: 40%;                   /* % width */
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;               /* em for input text */
+        margin-right: 10px;           /* px spacing */
+    }
+
+    /* BUTTON */
+    .newsletter-banner button {
+        padding: 10px 20px;           /* px padding */
+        margin-left: 5px;             /* px margin */
+        border: none;
+        background: #ffdd57;
+        color: #000;
+        border-radius: 5px;
+        font-size: 1rem;              /* rem font */
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .newsletter-banner button:hover {
+        background: #ffe98c;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        .newsletter-banner input[type="email"] {
+            width: 70%;
+            margin-bottom: 10px;
+        }
+        .newsletter-banner button {
+            width: 40%;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<div class="newsletter-banner">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Get the latest updates, offers, and news directly to your inbox.</p>
+
+    <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+
+</body>
+</html>

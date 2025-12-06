@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Plans</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f6f6f6;
+}
+
+/* Section Styling */
+.pricing-section{
+    text-align:center;
+    padding:50px 0;
+    background:linear-gradient(135deg,#7F7FD5,#86A8E7,#91EAE4);
+    color:#fff;
+}
+
+.pricing-section h1{
+    font-size:32px;
+    margin-bottom:10px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* Pricing Cards Container */
+.pricing-container{
+    width:85%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+/* Single Plan Box */
+.plan{
+    background:white;
+    color:#333;
+    width:300px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:.3s ease;
+    text-align:center;
+}
+
+/* Hover Glow */
+.plan:hover{
+    transform: scale(1.05);
+    box-shadow:0 0 25px rgba(255,255,255,0.7);
+}
+
+/* Pricing */
+.plan h2{
+    font-size:22px;
+    margin-bottom:10px;
+    font-weight:600;
+    color:#555;
+}
+
+.price{
+    font-size:35px;
+    font-weight:bold;
+    color:#ff4757;
+    margin-bottom:15px;
+    text-shadow:0 0 6px rgba(255,0,0,0.4);
+}
+
+/* Plan Details List */
+.plan ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    font-size:14px;
+    line-height:26px;
+}
+
+/* Buttons */
+.plan button{
+    margin-top:20px;
+    padding:10px 25px;
+    font-size:15px;
+    border-radius:25px;
+    border:none;
+    background:#ff4757;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.plan button:hover{
+    background:#e84118;
+}
+
+footer{
+    text-align:center;
+    padding:12px;
+    background:#222;
+    color:#fff;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+<section class="pricing-section">
+    <h1>Choose Your Plan</h1>
+
+    <div class="pricing-container">
+
+        <!-- Plan 1 -->
+        <div class="plan">
+            <h2>Basic Plan</h2>
+            <p class="price">₹199 / month</p>
+            <ul>
+                <li>✔ 5 Projects</li>
+                <li>✔ Email Support</li>
+                <li>✔ Basic Tutorials</li>
+            </ul>
+            <button>Get Started</button>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="plan" style="transform:scale(1.07); box-shadow:0 0 25px rgba(255,255,255,0.9);">
+            <h2>Standard Plan</h2>
+            <p class="price">₹399 / month</p>
+            <ul>
+                <li>✔ 15 Projects</li>
+                <li>✔ Priority Support</li>
+                <li>✔ Full Course Access</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="plan">
+            <h2>Premium Plan</h2>
+            <p class="price">₹699 / month</p>
+            <ul>
+                <li>✔ Unlimited Projects</li>
+                <li>✔ 1-on-1 Mentorship</li>
+                <li>✔ Certificate Included</li>
+            </ul>
+            <button>Upgrade</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2025 Pricing Plans | All Rights Reserved.
+</footer>
+
+</body>
+</html>

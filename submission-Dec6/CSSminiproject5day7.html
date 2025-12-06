@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox Pricing Table</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 40px;
+}
+
+.pricing-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.highlight {
+  background: linear-gradient(135deg, #6a5af9, #4fc3f7);
+  color: white;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #000;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="text-align:center;">Pricing Plans</h1>
+
+<div class="pricing-container">
+  <div class="card">
+    <h2>Basic</h2>
+    <p>$10 / month</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="card highlight">
+    <h2>Pro</h2>
+    <p>$20 / month</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="card">
+    <h2>Premium</h2>
+    <p>$30 / month</p>
+    <button>Buy Now</button>
+  </div>
+</div>
+
+</body>
+</html>

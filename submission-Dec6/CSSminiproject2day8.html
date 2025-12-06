@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Section</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        .feature-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .feature-section h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .feature-card {
+            background-color: white;
+            width: 300px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Feature icon alignment */
+        .feature-card img {
+            width: 40px;
+            margin-bottom: 10px;
+            align-self: center; /* aligns icon in the center */
+        }
+
+        /* flex-grow: middle column grows bigger */
+        .feature-card.middle {
+            flex-grow: 1;
+        }
+
+        .feature-card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="feature-section">
+        <h2>Our Features</h2>
+
+        <div class="features-container">
+
+            <div class="feature-card">
+                <img src="performance.jpg" alt="Feature 1">
+                <h3>Fast Performance</h3>
+                <p>Experience lightning-fast load times.</p>
+            </div>
+
+            <div class="feature-card middle">
+                <img src="platform.webp" alt="Feature 2">
+                <h3>Secure Platform</h3>
+                <p>Enhanced security to protect your data.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="intergration.webp" alt="Feature 3">
+                <h3>Easy Integration</h3>
+                <p>Seamless integration with your tools.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // TASK 1 :Create an array of student names
+
+    let students = ["Ravi", "Suresh", "Anita", "Kiran", "Meena"];
+    document.write("TASK 1: " ) ;
+    document.write("Student Names: " + students + "<br>");
+    console.log("Student Names:", students);
+
+        // task2
+
+        students.push("Raj");
+         document.write("TASK 2: " ) ;
+        document.write("Student Names: " + students + "<br>");
+
+        // TASK 3
+
+        students.pop("Raj");
+        document.write("TASK 3: " ) ;
+        document.write("Student Names: " + students + "<br>");
+
+        // TASK 4 
+
+      let upperNames = students.map(name => name.toUpperCase());
+      document.write("TASK 4: " ) ;
+      document.write("Original Students: " + students + "<br>");
+      document.write("Uppercase Students: " + upperNames + "<br>");
+
+      console.log("Original Students:", students);
+      console.log("Uppercase Students:", upperNames);
+
+      // TASK 5 ,6 and 7 
+
+          // Array of student names
+    let studentsN = ["Ravi", "Anita", "Amit", "Kiran", "Meena"];
+
+    // 5. Filter names starting with "A"
+    let namesStartingWithA = studentsN.filter(name => name.startsWith("A"));
+
+    
+     document.write("TASK 5: " ) ;
+    document.write("<b>Student Names:</b><br>");
+
+    // 6. Print each student using forEach()
+    document.write("TASK 6: " ) ;
+    students.forEach(name => document.write(name + "<br>"));
+    console.log("Student Names:");
+    students.forEach(name => console.log(name));
+
+    // 7. Book object
+
+    let book = {
+        title: "JavaScript Basics",
+        author: "John Doe",
+        price: 299
+    };
+
+
+    
+    document.write("TASK 7: " ) ;
+    document.write("<br><b>Names starting with A:</b> " + namesStartingWithA + "<br>");
+    console.log("Names starting with A:", namesStartingWithA);
+
+    document.write("TASK 8: " ) 
+    document.write("<br><b>Book Details:</b><br>");
+    document.write("Title: " + book.title + "<br>");
+    document.write("Author: " + book.author + "<br>");
+    document.write("Price: " + book.price + "<br>");
+
+    console.log("Book Details:", book);
+
+
+    // TASK 8 , 9 and 10 
+
+    // Book object
+    let book1 = {
+        title: "JavaScript Basics",
+        author: "John Doe",
+        price: 299
+    };
+
+    // 10. Add a new property 'genre'
+    book1.genre = "Programming";
+
+    // 8. Get all property names
+    let keys = Object.keys(book1);
+
+    // 9. Get all property values
+    let values = Object.values(book1);
+
+    // Output
+    document.write("TASK 9: " ) 
+    document.write("<b>Book Properties:</b> " + keys + "<br>");
+    document.write("TASK 10: " ) 
+    document.write("<b>Book Values:</b> " + values + "<br><br>");
+
+    console.log("Book Properties:", keys);
+    console.log("Book Values:", values);
+    document.write("TASK 11: " )
+    document.write("Updated Book Object:", book1);
+    console.log("Updated Book Object:", book1);
+
+     // TASKS 11 to 15
+
+     // Book object
+
+    let book0 = {
+        title: "JavaScript Basics",
+        author: "John Doe",
+        price: 299,
+        genre: "Programming"
+    };
+
+    // 11. Delete price property
+    delete book0.price; 
+      document.write("TASK 11: " ) ;
+      document.write(book0);
+
+    // 12. Merge publisher object into book
+    let publisher = { publisher: "Tech Books Press", year: 2024 };
+    Object.assign(book0, publisher);
+
+    // 13. Convert the book object into key-value pairs
+    let entries = Object.entries(book0);
+
+
+    // 14. Filter only odd numbers from an array
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let oddNumbers = numbers.filter(num => num % 2 !== 0);
+
+    // 15. Sort student scores in descending order
+    let scores = [45, 89, 72, 56, 90, 33];
+    scores.sort((a, b) => b - a);
+
+
+    // OUTPUT
+    document.write("TASK 12: " ) 
+    document.write("<b>Updated Book Object:</b><br>" + JSON.stringify(book) + "<br><br>");
+    document.write("TASK 13: " ) 
+    document.write("<b>Book Entries (Key-Value Pairs):</b><br>" + entries + "<br><br>");
+    document.write("TASK 14: " ) 
+    document.write("<b>Odd Numbers:</b> " + oddNumbers + "<br><br>");
+    document.write("TASK 15: " ) 
+    document.write("<b>Scores Sorted Descending:</b> " + scores + "<br>");
+
+    console.log("Updated Book:", book);
+    console.log("Entries:", entries);
+    console.log("Odd Numbers:", oddNumbers);
+    console.log("Sorted Scores:", scores);
+
+    </script>
+</body>
+</html>

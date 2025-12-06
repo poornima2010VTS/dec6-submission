@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Responsive Card Layout</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 40px;
+}
+
+/* Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    background: white;
+    flex-basis: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #555;
+    font-size: 14px;
+}
+
+.card-content button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    background: #1f78b4;
+}
+
+/* Special alignment for one card */
+.card.special {
+    align-self: flex-start;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="text-align:center;">Responsive Flexbox Card Layout</h1>
+
+<div class="card-container">
+
+    <div class="card">
+        <img src="men anime.jpg" alt="">
+        <div class="card-content">
+            <h3>Card One</h3>
+            <p>This is a responsive card using flex-basis and flex-wrap.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="card special">
+        <img src="women anime.jpg" alt="">
+        <div class="card-content">
+            <h3>Card Two</h3>
+            <p>This card uses <b>align-self: flex-start</b> to adjust alignment.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="birthday.jpg" alt="">
+        <div class="card-content">
+            <h3>Card Three</h3>
+            <p>Cards wrap into new rows when screen becomes smaller.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="beachsunset.jpg" alt="">
+        <div class="card-content">
+            <h3>Card Four</h3>
+            <p>Each card is clean and simple with good spacing.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

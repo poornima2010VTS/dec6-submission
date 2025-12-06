@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pricing Table Layout</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .pricing-table {
+        width: 100%;
+        border-spacing: 20px; /* px gap between pricing boxes */
+        padding: 20px;
+    }
+
+    .box {
+        width: 30%; /* % width */
+        border: 1px solid #ccc;
+        padding: 20px;
+        vertical-align: top;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .price {
+        font-size: 4vmin; /* vmin for scalable pricing text */
+        margin: 10px 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    li {
+        font-size: 1.1rem; /* rem for feature items */
+        margin: 8px 0;
+    }
+</style>
+
+</head>
+<body>
+
+<table class="pricing-table">
+    <tr>
+        <!-- BASIC -->
+        <td class="box">
+            <h2>Basic</h2>
+            <p class="price">$10 / month</p>
+            <ul>
+                <li>1 User</li>
+                <li>5GB Storage</li>
+                <li>Email Support</li>
+            </ul>
+        </td>
+
+        <!-- PRO -->
+        <td class="box">
+            <h2>Pro</h2>
+            <p class="price">$20 / month</p>
+            <ul>
+                <li>5 Users</li>
+                <li>50GB Storage</li>
+                <li>Priority Support</li>
+            </ul>
+        </td>
+
+        <!-- PREMIUM -->
+        <td class="box">
+            <h2>Premium</h2>
+            <p class="price">$30 / month</p>
+            <ul>
+                <li>Unlimited Users</li>
+                <li>200GB Storage</li>
+                <li>24/7 Support</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

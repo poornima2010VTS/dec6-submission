@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox Contact Section</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 40px;
+  background: #f2f2f2;
+  font-family: Arial;
+}
+
+.contact-container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.map {
+  flex: 1;
+}
+
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+.contact-form {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact-form button {
+  background: #28a745;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background: #1e7e34;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="text-align:center;">Contact Us</h1>
+
+<div class="contact-container">
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?..." allowfullscreen></iframe>
+  </div>
+
+  <div class="contact-form">
+    <h2>Send a Message</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Email">
+    <textarea rows="5" placeholder="Message"></textarea>
+    <button>Submit</button>
+  </div>
+
+</div>
+
+</body>
+</html>

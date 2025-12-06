@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Responsive Product Grid</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background: #f7f7f7;
+}
+
+/* Main Container */
+.products {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Product Card */
+.card {
+    background: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    display: flex;              /* nested flexbox */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Featured product grows bigger */
+.featured {
+    flex-grow: 1;
+}
+
+/* Image */
+.card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Titles */
+.card h3 {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Price */
+.price {
+    color: #ff5e00;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h2 class="products">Our Products</h2>
+
+<div class="product-grid">
+
+    <!-- Featured Product -->
+    <div class="card featured">
+        <img src="headphones.jpg" alt="">
+        <h4>Featured Product</h4>
+        <h3>Featured Headphones</h3>
+        <p>High-quality sound with noise cancellation.</p>
+        <div class="price">₹199</div>
+    </div>
+
+    <!-- Product 1 -->
+    <div class="card">
+        <img src="earbuds.jpg" alt="">
+        <h4>Product 1</h4>
+        <h3>Wireless Earbuds</h3>
+        <p>Compact and powerful sound.</p>
+        <div class="price">₹799</div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="card">
+        <img src="smartwatch.jpg" alt="">
+        <h4>Product 2</h4>
+        <h3>Smart Watch</h3>
+        <p>Track fitness and notifications.</p>
+        <div class="price">₹1999</div>
+    </div>
+
+</div>
+
+</body>
+</html>

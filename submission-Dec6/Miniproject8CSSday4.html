@@ -1,0 +1,77 @@
+<style>
+    .faq-section{
+        max-width:600px;
+        margin:3rem auto;
+        font-family:Arial;
+    }
+
+    .faq-item{
+        margin-bottom:1rem;
+        border-radius:6px;
+        background:#fff;
+        padding:1rem;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .faq-item input{display:none;}
+
+    .faq-item label{
+        display:flex;
+        justify-content:space-between;
+        cursor:pointer;
+        font-size:1.2rem;
+        font-weight:bold;
+    }
+
+    .faq-item label::after{
+        content:"▸";
+        transition:0.3s;
+        font-size:1.2rem;
+    }
+
+    .faq-item input:checked + label::after{
+        transform:rotate(90deg);
+    }
+
+    .answer{
+        max-height:0;
+        overflow:hidden;
+        transition:max-height 0.4s ease;
+        padding-left:0.5rem;
+    }
+
+    .faq-item input:checked ~ .answer{
+        max-height:200px;
+        margin-top:0.5rem;
+    }
+</style>
+
+<section class="faq-section">
+    <h2>FAQ – Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <input type="checkbox" id="q1">
+        <label for="q1">What is your return policy?</label>
+        <div class="answer">
+            <p>You can return items within 30 days of purchase.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="q2">
+        <label for="q2">Do you offer customer support?</label>
+        <div class="answer">
+            <p>Yes, support is available 24/7.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="q3">
+        <label for="q3">How much is the delivery fee?</label>
+        <div class="answer">
+            <p>Delivery is free for orders above $50.</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

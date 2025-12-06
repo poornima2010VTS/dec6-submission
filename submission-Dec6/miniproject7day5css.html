@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form Section</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f7f7f7;
+}
+
+/* Contact Section Styling */
+.contact-section{
+    padding:60px 0;
+    background: radial-gradient(circle, #96e6a1, #3f87a6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Form Container */
+.contact-box{
+    background:white;
+    width:80%;
+    max-width:480px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+.contact-box h2{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:26px;
+    color:#3f87a6;
+}
+
+/* Input + Textarea */
+.contact-box input,
+.contact-box textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    font-size:14px;
+    border:2px solid transparent;
+    border-radius:6px;
+    background:#f1f1f1;
+    transition:.3s;
+}
+
+/* Focus Glow */
+.contact-box input:focus,
+.contact-box textarea:focus{
+    border-color:#3f87a6;
+    background:#fff;
+    box-shadow:0 0 8px rgba(63,135,166,0.5);
+}
+
+/* Submit Button */
+.contact-box button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    background:#3f87a6;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-box button:hover{
+    background:#2c6780;
+}
+
+</style>
+</head>
+<body>
+
+<section class="contact-section">
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Enter your Name" required>
+            <input type="email" placeholder="Enter your Email" required>
+            <textarea rows="4" placeholder="Message..."></textarea>
+            <button>Send Message</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Card Design</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .card {
+        width: 40%;              /* % for card width */
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        text-align: center;
+        padding: 20px;          /* px for spacing */
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 15px;    /* px spacing */
+    }
+
+    .card h2 {
+        font-size: 4vmin;       /* scalable font using vmin */
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 2.5vmax;     /* scalable font using vmax */
+        color: #444;
+        margin-bottom: 15px;    /* px spacing */
+    }
+
+    .btn {
+        padding: 10px 20px;     /* px spacing */
+        background: #0074d9;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 2.5vmin;     /* scalable using vmin */
+    }
+
+    .btn:hover {
+        background: #005fa3;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <img src="wirelessheadphone.jpg" alt="Product Image">
+    <h2>Wireless Headphones</h2>
+    <p>INR 20000</p>
+    <a href="#" class="btn">Buy Now</a>
+</div>
+
+</body>
+</html>

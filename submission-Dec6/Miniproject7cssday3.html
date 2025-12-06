@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Responsive Image Gallery - Grid</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* GRID CONTAINER */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 15px; /* px spacing */
+        padding: 20px;
+    }
+
+    /* IMAGE BOX */
+    .img-box {
+        width: 100%;       /* % width inside grid */
+        height: 30vh;      /* vh height */
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.4s;
+    }
+
+    .img-box:hover img {
+        filter: brightness(60%);
+        transform: scale(1.05); /* zoom effect */
+    }
+
+    /* CAPTION */
+    .caption {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 1em; /* using em units */
+        border-radius: 4px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        }
+        .img-box {
+            height: 25vh;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .gallery {
+            grid-template-columns: 1fr; /* 1 column on phones */
+        }
+        .img-box {
+            height: 30vh;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Responsive Image Gallery</h2>
+
+<div class="gallery">
+
+    <div class="img-box">
+        <img src="wedding.jpg" alt="">
+        <div class="caption">Image 1</div>
+    </div>
+
+    <div class="img-box">
+        <img src="birthday.jpg" alt="">
+        <div class="caption">Image 2</div>
+    </div>
+
+    <div class="img-box">
+        <img src="sunny beach.jpg" alt="">
+        <div class="caption">Image 3</div>
+    </div>
+
+    <div class="img-box">
+        <img src="concert.jpg" alt="">
+        <div class="caption">Image 4</div>
+    </div>
+
+    <div class="img-box">
+        <img src="Calm Beach.jpg" alt="">
+        <div class="caption">Image 5</div>
+    </div>
+
+    <div class="img-box">
+        <img src="beachsunset.jpg" alt="">
+        <div class="caption">Image 6</div>
+    </div>
+
+</div>
+
+</body>
+</html>

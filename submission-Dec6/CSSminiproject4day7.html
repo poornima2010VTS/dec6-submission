@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Card</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+
+        /* Gradient background */
+        background: linear-gradient(to right, #ff9a76, #ffb899);
+        
+        height: 100vh;
+
+        /* Flexbox Centering */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background: #fff;
+        width: 450px;
+        padding: 40px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+        margin: 0 0 10px;
+        font-size: 28px;
+        color: #333;
+    }
+
+    p {
+        margin-bottom: 25px;
+        color: #555;
+        font-size: 16px;
+    }
+
+    .btn {
+        background-color: #ff6d3d;
+        border: none;
+        padding: 12px 25px;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #ff5722;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h2>Welcome to Vetri Tech</h2>
+    <p>Your success starts here. Join us and build your future!</p>
+    <button class="btn">Get Started</button>
+</div>
+
+</body>
+</html>

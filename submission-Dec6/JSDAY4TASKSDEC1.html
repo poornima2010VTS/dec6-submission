@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    <!-- task1 -->
+      document.write("TASK1 : ")
+      for (let i = 1; i <= 10; i++)
+      {
+        console.log(i);                  // Prints in console
+        document.write(i + "<br>");      // Prints on the webpage
+      }
+
+    // task 2 
+      document.write("TASK 2 : ")
+     for (let i = 2; i <= 20; i += 2) {
+        console.log(i);                  // Prints in console
+        document.write(i + "<br>");      // Prints on the webpage
+    }
+
+    // task 3 
+
+    let i = 10;
+     document.write("TASK3 : ")
+     while (i >= 1) {
+        console.log(i);                 // Prints in console
+        document.write(i + "<br>");     // Prints on the webpage
+        i--;
+    }
+
+    // task 4
+
+    let count = 1;
+    document.write("TASK4 : ")
+    do {
+        console.log("Hello World!");            // Prints in console
+        document.write("Hello World!<br>");     // Prints on webpage
+        count++;
+    } while (count <= 5);
+
+    // task 5
+
+    const fruits = ["Apple", "Banana", "Orange", "Mango"];
+    document.write("TASK5 : ")
+    for (const item of fruits) {
+        console.log(item);                  // Prints in console
+        document.write(item + "<br>");      // Prints on webpage
+    }
+
+    // task 6
+    
+    document.write("TASK6 : ")
+    const person = { name: "John", age: 25, city: "Delhi" };
+
+    for (let key in person) {
+        document.write(key + ": " + person[key] + "<br>");
+    }
+
+    // task 7
+
+     let sum = 0;
+     document.write("TASK7 : ")
+    for (let i = 1; i <= 10; i++) {
+        sum += i;
+    }
+
+    document.write("Sum = " + sum);
+
+// task 8 
+    const numbers = [10, 25, 45, 51, 60, 80];
+
+    document.write("task 8 :");
+    for (let num of numbers) {
+        if (num > 50) {
+            document.write("First number > 50 is: " + num);
+            break;
+        }
+    }
+
+    //task 9
+
+
+          document.write("task 9 :");
+    for (let i = 1; i <= 20; i++) {
+        if (i % 3 === 0) {
+            continue;
+        }
+        document.write(i + "<br>");
+    }
+// task 10
+    document.write("task 10 :");
+    for (let i = 1; i <= 10; i++) {
+        document.write("5 x " + i + " = " + (5 * i) + "<br>");
+    }
+
+    // task 11
+
+        document.write("task 11 :");
+      let str = "Hello";
+    let reversed = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+  document.write("Reversed String: " + reversed + "<br>");
+
+  // task 12
+
+    document.write("task 12 :");
+    let text = "javascript";
+    let vowels = "aeiouAEIOU";
+    let count1 = 0;
+
+    for (let char of text) {
+        if (vowels.includes(char)) {
+            count1 ++;
+        }
+    }
+
+    document.write("Number of vowels: " + count1 + "<br>");
+
+    // task 13
+
+    document.write("task 13 :");
+    const nums = [12, 45, 7, 89, 32];
+    let largest = nums[0];
+
+    for (let num of nums) {
+        if (num > largest) {
+            largest = num;
+        }
+    }
+
+    document.write("Largest number: " + largest);
+
+    // task 14
+
+     document.write("task 14 :");
+    for (let i = 1; i <= 50; i++) {
+        if (i % 2 !== 0) {
+            document.write(i + "<br>");
+        }
+    }
+
+    // task 15
+
+    let sum1 = 0;
+    document.write("task 15 :");
+    for (let i = 2; i <= 100; i += 2) {
+        sum1 += i;
+    }
+    document.write("Sum of even numbers from 1 to 100 = " + sum);
+</script>  
+</body>
+</html>
